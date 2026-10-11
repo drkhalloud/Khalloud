@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Dr. Mohamed Khaled | Knowledge That Lasts</title>
-<meta name="description" content="Microbiology made simple with stories, mnemonics and creative tricks. Recorded courses by Dr. Mohamed Khaled.">
+<title>Dr. Mohamed Khaled (Dr. Khalloud) | Microbiology Courses for Pharmacy &amp; Medical Students</title>
+<meta name="description" content="Dr. Mohamed Khaled teaches microbiology to pharmacy and medical students with stories and mnemonics. Recorded courses with PDFs and pre-exam questions.">
 <meta name="theme-color" content="#0a0a0a">
 <link rel="preload" href="playfair-display-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" href="favicon.ico" sizes="any">
@@ -14,9 +14,17 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://drkhalloud.com/">
 <meta property="og:title" content="Dr. Mohamed Khaled | Knowledge That Lasts">
-<meta property="og:description" content="Microbiology made simple with stories, mnemonics and creative tricks.">
+<meta property="og:description" content="Dr. Mohamed Khaled teaches microbiology to pharmacy and medical students with stories and mnemonics. Recorded courses with PDFs and pre-exam questions.">
 <meta property="og:image" content="https://drkhalloud.com/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://drkhalloud.com/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="author" content="Dr. Mohamed Khaled">
+<meta property="og:site_name" content="Dr. Mohamed Khaled">
+<meta property="og:image:alt" content="Dr. Mohamed Khaled, Knowledge That Lasts">
+<meta name="twitter:title" content="Dr. Mohamed Khaled | Knowledge That Lasts">
+<meta name="twitter:description" content="Dr. Mohamed Khaled teaches microbiology to pharmacy and medical students with stories and mnemonics. Recorded courses with PDFs and pre-exam questions.">
+<meta name="twitter:image" content="https://drkhalloud.com/og-image.png">
 <style>
 @font-face{font-family:'Playfair Display';font-weight:500;font-style:normal;font-display:swap;src:url(playfair-display-latin-500-normal.woff2) format('woff2')}
 @font-face{font-family:'Playfair Display';font-weight:600;font-style:normal;font-display:swap;src:url(playfair-display-latin-600-normal.woff2) format('woff2')}
@@ -65,10 +73,7 @@ h2::after{content:"";display:block;width:44px;height:1px;background:var(--gold);
 .way{text-align:left}
 .way div{padding:26px 0;border-top:1px solid var(--rule)}
 .way div:last-child{border-bottom:1px solid var(--rule)}
-.way h3,.row h3{font-family:var(--serif);font-weight:600;font-size:var(--s-lg);line-height:1.3}
 .way h3{color:var(--gold);margin-bottom:4px}
-.incl{list-style:none;display:flex;flex-wrap:wrap;gap:6px 24px;justify-content:center;color:var(--soft);font-size:var(--s-sm);margin:-8px 0 34px}
-.incl li::before{content:"\2014\00a0";color:var(--gold)}
 .list{text-align:left;border-top:1px solid var(--rule)}
 .row{display:grid;grid-template-columns:1fr auto;gap:14px 20px;align-items:center;padding:26px 0;border-bottom:1px solid var(--rule)}
 .price{font-family:var(--serif);font-weight:600;font-size:var(--s-lg);color:var(--gold);white-space:nowrap}
@@ -83,7 +88,27 @@ footer img{height:48px;margin:0 auto 14px;display:block}
 .row .btn{grid-column:auto;min-height:46px;padding:0 28px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+.way h3,.course h3{font-family:var(--serif);font-weight:600;font-size:var(--s-lg);line-height:1.3}
+#courses .wrap{max-width:900px}
+.courses{display:grid;gap:20px;text-align:left}
+.course{border:1px solid var(--rule);border-radius:20px;overflow:hidden;background:#0f0f0f;display:flex;flex-direction:column;transition:border-color .25s,transform .25s}
+.course:hover{border-color:rgba(255,178,10,.55);transform:translateY(-3px)}
+.cover{aspect-ratio:3/2;background:radial-gradient(circle at 50% 46%,rgba(255,178,10,.17),transparent 64%),#0c0c0c;border-bottom:1px solid var(--rule)}
+.course .body{padding:22px 24px 26px;display:flex;flex-direction:column;gap:6px;flex:1}
+.course .btn{margin-top:auto;width:100%}
+.course .price{margin-bottom:14px}
+.hero{position:relative}
+.hero::before{content:"";position:absolute;z-index:-1;top:20px;left:50%;width:520px;height:520px;margin-left:-260px;background:radial-gradient(circle,rgba(255,178,10,.12),transparent 64%)}
+@media(min-width:760px){.courses{grid-template-columns:1fr 1fr}}
+@media(prefers-reduced-motion:reduce){.course{transition:none}.course:hover{transform:none}}
+.cover{position:relative;overflow:hidden}
+.cover .shot{width:100%;height:100%;object-fit:cover;display:block}
+.incl{list-style:none;display:grid;border:1px solid var(--rule);border-radius:16px;overflow:hidden;margin:-8px 0 36px;text-align:center}
+.incl li{padding:16px 18px;color:var(--ivory);font-size:var(--s-sm);letter-spacing:.01em}
+.incl li+li{border-top:1px solid var(--rule)}
+@media(min-width:760px){.incl{grid-template-columns:repeat(3,1fr)}.incl li+li{border-top:0;border-left:1px solid var(--rule)}}
 </style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Person", "@id": "https://drkhalloud.com/#person", "name": "Mohamed Khaled", "alternateName": ["Dr. Mohamed Khaled", "Dr. Khalloud", "dr.khalloud"], "jobTitle": "Microbiology educator", "url": "https://drkhalloud.com/", "image": "https://drkhalloud.com/og-image.png", "email": "dr.mkhaled.edu@gmail.com", "description": "Microbiology educator teaching pharmacy and medical students with stories, mnemonics and creative tricks."}, {"@type": "WebSite", "@id": "https://drkhalloud.com/#website", "url": "https://drkhalloud.com/", "name": "Dr. Mohamed Khaled", "publisher": {"@id": "https://drkhalloud.com/#person"}}, {"@type": "Course", "name": "General Microbiology", "description": "Recorded microbiology course with PDF files for the whole curriculum and pre-exam questions.", "provider": {"@id": "https://drkhalloud.com/#person"}, "inLanguage": "en", "offers": {"@type": "Offer", "price": "1700", "priceCurrency": "EGP", "url": "https://drkhalloud.com/#courses", "category": "Paid"}, "image": "https://drkhalloud.com/general-microbiology.webp"}, {"@type": "Course", "name": "Pharmaceutical Microbiology", "description": "Recorded microbiology course with PDF files for the whole curriculum and pre-exam questions.", "provider": {"@id": "https://drkhalloud.com/#person"}, "inLanguage": "en", "offers": {"@type": "Offer", "price": "1700", "priceCurrency": "EGP", "url": "https://drkhalloud.com/#courses", "category": "Paid"}, "image": "https://drkhalloud.com/pharmaceutical-microbiology.webp"}, {"@type": "Course", "name": "Parasitology & Virology", "description": "Recorded microbiology course with PDF files for the whole curriculum and pre-exam questions.", "provider": {"@id": "https://drkhalloud.com/#person"}, "inLanguage": "en", "offers": {"@type": "Offer", "price": "1700", "priceCurrency": "EGP", "url": "https://drkhalloud.com/#courses", "category": "Paid"}, "image": "https://drkhalloud.com/parasitology-virology.webp"}, {"@type": "Course", "name": "Medical Microbiology", "description": "Recorded microbiology course with PDF files for the whole curriculum and pre-exam questions.", "provider": {"@id": "https://drkhalloud.com/#person"}, "inLanguage": "en", "offers": {"@type": "Offer", "price": "1800", "priceCurrency": "EGP", "url": "https://drkhalloud.com/#courses", "category": "Paid"}, "image": "https://drkhalloud.com/medical-microbiology.webp"}]}</script>
 </head>
 <body>
 <header><div class="bar">
@@ -114,18 +139,18 @@ footer img{height:48px;margin:0 auto 14px;display:block}
 <div class="way">
 <div><h3>Stories</h3><p class="soft">Every topic becomes a story, so the facts connect instead of floating around.</p></div>
 <div><h3>Mnemonics</h3><p class="soft">Memory hooks for the details that are usually the first to be forgotten.</p></div>
-<div><h3>Creative moves</h3><p class="soft">Unusual visuals and tricks that make a hard idea stick.</p></div>
+<div><h3>Creative tricks</h3><p class="soft">Unusual visuals and tricks that make a hard idea stick.</p></div>
 </div>
 </div></section>
 
 <section id="courses"><div class="wrap">
 <h2>Courses</h2>
 <ul class="incl"><li>Complete recorded curriculum</li><li>PDF files for the whole curriculum</li><li>Pre-exam questions</li></ul>
-<div class="list">
-<div class="row"><h3>General Microbiology</h3><span class="price">1,700<small>L.E</small></span><a class="btn ghost" href="https://wa.me/201142533114?text=I%20would%20like%20to%20register%20for%20the%20General%20Microbiology%20course.">Register</a></div>
-<div class="row"><h3>Pharmaceutical Microbiology</h3><span class="price">1,700<small>L.E</small></span><a class="btn ghost" href="https://wa.me/201142533114?text=I%20would%20like%20to%20register%20for%20the%20Pharmaceutical%20Microbiology%20course.">Register</a></div>
-<div class="row"><h3>Parasitology &amp; Virology</h3><span class="price">1,700<small>L.E</small></span><a class="btn ghost" href="https://wa.me/201142533114?text=I%20would%20like%20to%20register%20for%20the%20Parasitology%20%26%20Virology%20course.">Register</a></div>
-<div class="row"><h3>Medical Microbiology</h3><span class="price">1,800<small>L.E</small></span><a class="btn ghost" href="https://wa.me/201142533114?text=I%20would%20like%20to%20register%20for%20the%20Medical%20Microbiology%20course.">Register</a></div>
+<div class="courses">
+<article class="course"><div class="cover"><img class="shot" src="general-microbiology.webp" alt="General Microbiology course cover" width="766" height="509" loading="lazy" decoding="async"></div><div class="body"><h3>General Microbiology</h3><div class="price">1,700<small>L.E</small></div><a class="btn ghost" href="https://wa.me/201142533114?text=I%20would%20like%20to%20register%20for%20the%20General%20Microbiology%20course.">Register</a></div></article>
+<article class="course"><div class="cover"><img class="shot" src="pharmaceutical-microbiology.webp" alt="Pharmaceutical Microbiology course cover" width="766" height="509" loading="lazy" decoding="async"></div><div class="body"><h3>Pharmaceutical Microbiology</h3><div class="price">1,700<small>L.E</small></div><a class="btn ghost" href="https://wa.me/201142533114?text=I%20would%20like%20to%20register%20for%20the%20Pharmaceutical%20Microbiology%20course.">Register</a></div></article>
+<article class="course"><div class="cover"><img class="shot" src="parasitology-virology.webp" alt="Parasitology & Virology course cover" width="766" height="509" loading="lazy" decoding="async"></div><div class="body"><h3>Parasitology &amp; Virology</h3><div class="price">1,700<small>L.E</small></div><a class="btn ghost" href="https://wa.me/201142533114?text=I%20would%20like%20to%20register%20for%20the%20Parasitology%20%26%20Virology%20course.">Register</a></div></article>
+<article class="course"><div class="cover"><img class="shot" src="medical-microbiology.webp" alt="Medical Microbiology course cover" width="766" height="509" loading="lazy" decoding="async"></div><div class="body"><h3>Medical Microbiology</h3><div class="price">1,800<small>L.E</small></div><a class="btn ghost" href="https://wa.me/201142533114?text=I%20would%20like%20to%20register%20for%20the%20Medical%20Microbiology%20course.">Register</a></div></article>
 </div>
 </div></section>
 
