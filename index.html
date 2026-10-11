@@ -97,7 +97,7 @@ footer img{height:48px;margin:0 auto 14px;display:block}
 .course .btn{margin-top:auto;width:100%}
 .course .price{margin-bottom:14px}
 .hero{position:relative}
-.hero::before{content:"";position:absolute;z-index:-1;top:20px;left:50%;width:520px;height:520px;margin-left:-260px;background:radial-gradient(circle,rgba(255,178,10,.12),transparent 64%)}
+.hero::before{content:"";position:absolute;z-index:-1;top:20px;left:50%;width:min(520px,100%);aspect-ratio:1;transform:translateX(-50%);background:radial-gradient(circle,rgba(255,178,10,.12),transparent 64%);pointer-events:none}
 @media(min-width:760px){.courses{grid-template-columns:1fr 1fr}}
 @media(prefers-reduced-motion:reduce){.course{transition:none}.course:hover{transform:none}}
 .cover{position:relative;overflow:hidden}
@@ -106,6 +106,9 @@ footer img{height:48px;margin:0 auto 14px;display:block}
 .incl li{padding:16px 18px;color:var(--ivory);font-size:var(--s-sm);letter-spacing:.01em}
 .incl li+li{border-top:1px solid var(--rule)}
 @media(min-width:760px){.incl{grid-template-columns:repeat(3,1fr)}.incl li+li{border-top:0;border-left:1px solid var(--rule)}}
+html,body{max-width:100%;overflow-x:hidden}
+img{max-width:100%}
+.wrap,.bar{width:100%}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Person", "@id": "https://drkhalloud.com/#person", "name": "Mohamed Khaled", "alternateName": ["Dr. Mohamed Khaled", "Dr. Khalloud", "dr.khalloud"], "jobTitle": "Microbiology educator", "url": "https://drkhalloud.com/", "image": "https://drkhalloud.com/og-image.png", "email": "dr.mkhaled.edu@gmail.com", "description": "Microbiology educator teaching pharmacy and medical students with stories, mnemonics and creative tricks."}, {"@type": "WebSite", "@id": "https://drkhalloud.com/#website", "url": "https://drkhalloud.com/", "name": "Dr. Mohamed Khaled", "publisher": {"@id": "https://drkhalloud.com/#person"}}, {"@type": "Course", "name": "General Microbiology", "description": "Recorded microbiology course with PDF files for the whole curriculum and pre-exam questions.", "provider": {"@id": "https://drkhalloud.com/#person"}, "inLanguage": "en", "offers": {"@type": "Offer", "price": "1700", "priceCurrency": "EGP", "url": "https://drkhalloud.com/#courses", "category": "Paid"}, "image": "https://drkhalloud.com/general-microbiology.webp"}, {"@type": "Course", "name": "Pharmaceutical Microbiology", "description": "Recorded microbiology course with PDF files for the whole curriculum and pre-exam questions.", "provider": {"@id": "https://drkhalloud.com/#person"}, "inLanguage": "en", "offers": {"@type": "Offer", "price": "1700", "priceCurrency": "EGP", "url": "https://drkhalloud.com/#courses", "category": "Paid"}, "image": "https://drkhalloud.com/pharmaceutical-microbiology.webp"}, {"@type": "Course", "name": "Parasitology & Virology", "description": "Recorded microbiology course with PDF files for the whole curriculum and pre-exam questions.", "provider": {"@id": "https://drkhalloud.com/#person"}, "inLanguage": "en", "offers": {"@type": "Offer", "price": "1700", "priceCurrency": "EGP", "url": "https://drkhalloud.com/#courses", "category": "Paid"}, "image": "https://drkhalloud.com/parasitology-virology.webp"}, {"@type": "Course", "name": "Medical Microbiology", "description": "Recorded microbiology course with PDF files for the whole curriculum and pre-exam questions.", "provider": {"@id": "https://drkhalloud.com/#person"}, "inLanguage": "en", "offers": {"@type": "Offer", "price": "1800", "priceCurrency": "EGP", "url": "https://drkhalloud.com/#courses", "category": "Paid"}, "image": "https://drkhalloud.com/medical-microbiology.webp"}]}</script>
 </head>
