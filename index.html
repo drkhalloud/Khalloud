@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dr. Mohamed Khaled | Knowledge That Lasts</title>
+<meta name="description" content="Microbiology made simple with stories, mnemonics and creative tricks. Recorded courses by Dr. Mohamed Khaled.">
+<meta name="theme-color" content="#0a0a0a">
+<link rel="preload" href="playfair-display-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://drkhalloud.com/">
+<meta property="og:title" content="Dr. Mohamed Khaled | Knowledge That Lasts">
+<meta property="og:description" content="Microbiology made simple with stories, mnemonics and creative tricks.">
+<meta property="og:image" content="https://drkhalloud.com/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+@font-face{font-family:'Playfair Display';font-weight:500;font-style:normal;font-display:swap;src:url(playfair-display-latin-500-normal.woff2) format('woff2')}
+@font-face{font-family:'Playfair Display';font-weight:600;font-style:normal;font-display:swap;src:url(playfair-display-latin-600-normal.woff2) format('woff2')}
+@font-face{font-family:'Playfair Display';font-weight:500;font-style:italic;font-display:swap;src:url(playfair-display-latin-500-italic.woff2) format('woff2')}
+@font-face{font-family:'Inter';font-weight:400;font-style:normal;font-display:swap;src:url(inter-latin-400-normal.woff2) format('woff2')}
+@font-face{font-family:'Inter';font-weight:500;font-style:normal;font-display:swap;src:url(inter-latin-500-normal.woff2) format('woff2')}
+:root{--bg:#0a0a0a;--rule:#272624;--ivory:#f4efe6;--soft:#a9a59c;--gold:#ffb20a;--serif:'Playfair Display',Georgia,'Times New Roman',serif;--sans:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+--s-sm:15px;--s-body:17px;--s-lg:22px;--s-xl:34px;--s-2xl:clamp(38px,9.5vw,54px)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--bg);scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:var(--sans);background:var(--bg);color:var(--ivory);font-size:var(--s-body);line-height:1.75;font-weight:400;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body.lock{overflow:hidden}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+.wrap{max-width:720px;margin:0 auto;padding:0 26px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(10,10,10,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--rule)}
+.bar{max-width:1000px;margin:0 auto;padding:0 26px;display:flex;align-items:center;justify-content:space-between;height:68px}
+.bar img{height:36px;width:auto;display:block}
+.menu-btn,.close{display:flex;align-items:center;gap:12px;background:none;border:1px solid var(--rule);color:var(--ivory);font:500 var(--s-sm) var(--sans);letter-spacing:.02em;padding:0 20px;height:42px;border-radius:999px;cursor:pointer}
+.menu-btn:hover,.close:hover{border-color:var(--gold)}
+.menu-btn i{display:block;width:18px;height:1.5px;background:var(--gold);box-shadow:0 6px 0 var(--gold);margin-bottom:6px}
+.overlay{position:fixed;inset:0;z-index:30;background:var(--bg);display:none;flex-direction:column;padding:0 26px calc(30px + env(safe-area-inset-bottom,0px))}
+.overlay.open{display:flex}
+.overlay .top{display:flex;align-items:center;justify-content:space-between;height:68px;margin-top:env(safe-area-inset-top,0px)}
+.overlay .top img{height:36px}
+.overlay nav{flex:1;display:flex;flex-direction:column;justify-content:center;text-align:center}
+.overlay nav a{font-family:var(--serif);font-weight:500;font-size:38px;line-height:1.4;text-decoration:none;padding:10px 0;border-bottom:1px solid var(--rule)}
+.overlay nav a:last-child{border-bottom:0}
+.overlay nav a:hover{color:var(--gold)}
+.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--gold);color:#15110a;font:500 var(--s-sm) var(--sans);letter-spacing:.03em;text-decoration:none;min-height:50px;padding:0 32px;border-radius:999px;transition:background .2s}
+.btn:hover{background:#ffc43d}
+.btn.ghost{background:none;color:var(--gold);border:1px solid var(--gold)}
+.btn.ghost:hover{background:var(--gold);color:#15110a}
+.hero{text-align:center;padding:56px 0 84px}
+.photo{position:relative;width:min(240px,64vw);aspect-ratio:1;margin:0 auto 42px}
+.photo::before{content:"";position:absolute;inset:-12px;border-radius:50%;border:1px solid var(--gold);opacity:.7}
+.photo img{width:100%;height:100%;object-fit:cover;border-radius:50%;display:block}
+h1{font-family:var(--serif);font-weight:600;font-size:var(--s-2xl);line-height:1.1}
+.slogan{display:flex;align-items:center;justify-content:center;gap:16px;margin-top:18px;font-family:var(--serif);font-style:italic;font-weight:500;font-size:var(--s-lg);color:var(--gold)}
+.slogan::before,.slogan::after{content:"";width:clamp(24px,8vw,52px);height:1px;background:var(--gold);opacity:.6}
+section{padding:80px 0;border-top:1px solid var(--rule);text-align:center}
+h2{font-family:var(--serif);font-weight:600;font-size:var(--s-xl);line-height:1.15}
+h2::after{content:"";display:block;width:44px;height:1px;background:var(--gold);margin:20px auto 36px}
+.lead{font-family:var(--serif);font-weight:500;font-size:var(--s-lg);line-height:1.5;margin-bottom:20px}
+.soft{color:var(--soft)}
+.way{text-align:left}
+.way div{padding:26px 0;border-top:1px solid var(--rule)}
+.way div:last-child{border-bottom:1px solid var(--rule)}
+.way h3,.row h3{font-family:var(--serif);font-weight:600;font-size:var(--s-lg);line-height:1.3}
+.way h3{color:var(--gold);margin-bottom:4px}
+.incl{list-style:none;display:flex;flex-wrap:wrap;gap:6px 24px;justify-content:center;color:var(--soft);font-size:var(--s-sm);margin:-8px 0 34px}
+.incl li::before{content:"\2014\00a0";color:var(--gold)}
+.list{text-align:left;border-top:1px solid var(--rule)}
+.row{display:grid;grid-template-columns:1fr auto;gap:14px 20px;align-items:center;padding:26px 0;border-bottom:1px solid var(--rule)}
+.price{font-family:var(--serif);font-weight:600;font-size:var(--s-lg);color:var(--gold);white-space:nowrap}
+.price small{font-family:var(--sans);font-size:var(--s-sm);color:var(--soft);margin-left:4px;font-weight:400}
+.row .btn{grid-column:1/-1}
+.mail{display:block;margin:24px auto 0;color:var(--ivory);text-decoration:none;font-size:var(--s-body);border-bottom:1px solid var(--gold);width:max-content;max-width:100%;word-break:break-all}
+.mail:hover{color:var(--gold)}
+footer{border-top:1px solid var(--rule);padding:44px 0;text-align:center;color:#7d7a73;font-size:var(--s-sm)}
+footer img{height:48px;margin:0 auto 14px;display:block}
+@media(min-width:760px){
+.row{grid-template-columns:1fr auto auto;gap:0 40px}
+.row .btn{grid-column:auto;min-height:46px;padding:0 28px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+<header><div class="bar">
+<a href="#top" aria-label="Home"><img src="logo.png" alt="MK" width="68" height="36"></a>
+<button class="menu-btn" id="open" aria-expanded="false" aria-controls="menu"><i></i>Menu</button>
+</div></header>
+
+<div class="overlay" id="menu" role="dialog" aria-modal="true" aria-label="Menu">
+<div class="top"><img src="logo.png" alt="MK" width="68" height="36"><button class="close" id="close">Close</button></div>
+<nav><a href="#about">About me</a><a href="#method">The method</a><a href="#courses">Courses</a><a href="#contact">Contact</a></nav>
+</div>
+
+<main id="top">
+<div class="wrap hero">
+<div class="photo"><img src="photo.webp" alt="Portrait of Dr. Mohamed Khaled" width="900" height="900"></div>
+<h1>Dr. Mohamed Khaled</h1>
+<p class="slogan">Knowledge That Lasts</p>
+</div>
+
+<section id="about"><div class="wrap">
+<h2>About me</h2>
+<p class="lead">Microbiology becomes easier when you understand how the pieces fit together.</p>
+<p class="soft">With more than five years of experience teaching microbiology, I use effective and creative methods that turn difficult concepts into simple, understandable and memorable ideas.</p>
+</div></section>
+
+<section id="method"><div class="wrap">
+<h2>The method</h2>
+<div class="way">
+<div><h3>Stories</h3><p class="soft">Every topic becomes a story, so the facts connect instead of floating around.</p></div>
+<div><h3>Mnemonics</h3><p class="soft">Memory hooks for the details that are usually the first to be forgotten.</p></div>
+<div><h3>Creative moves</h3><p class="soft">Unusual visuals and tricks that make a hard idea stick.</p></div>
+</div>
+</div></section>
+
+<section id="courses"><div class="wrap">
+<h2>Courses</h2>
+<ul class="incl"><li>Complete recorded curriculum</li><li>PDF files for the whole curriculum</li><li>Pre-exam questions</li></ul>
+<div class="list">
+<div class="row"><h3>General Microbiology</h3><span class="price">1,700<small>L.E</small></span><a class="btn ghost" href="https://wa.me/201142533114?text=I%20would%20like%20to%20register%20for%20the%20General%20Microbiology%20course.">Register</a></div>
+<div class="row"><h3>Pharmaceutical Microbiology</h3><span class="price">1,700<small>L.E</small></span><a class="btn ghost" href="https://wa.me/201142533114?text=I%20would%20like%20to%20register%20for%20the%20Pharmaceutical%20Microbiology%20course.">Register</a></div>
+<div class="row"><h3>Parasitology &amp; Virology</h3><span class="price">1,700<small>L.E</small></span><a class="btn ghost" href="https://wa.me/201142533114?text=I%20would%20like%20to%20register%20for%20the%20Parasitology%20%26%20Virology%20course.">Register</a></div>
+<div class="row"><h3>Medical Microbiology</h3><span class="price">1,800<small>L.E</small></span><a class="btn ghost" href="https://wa.me/201142533114?text=I%20would%20like%20to%20register%20for%20the%20Medical%20Microbiology%20course.">Register</a></div>
+</div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+<h2>Contact</h2>
+<p class="soft" style="margin-bottom:30px">Questions about a course or registration? Reach me on WhatsApp or by email.</p>
+<a class="btn" href="https://wa.me/201142533114">Message on WhatsApp</a>
+<a class="mail" href="mailto:dr.mkhaled.edu@gmail.com">dr.mkhaled.edu@gmail.com</a>
+</div></section>
+</main>
+
+<footer><img src="logo.png" alt="MK" width="91" height="48">&copy; 2026 Dr. Mohamed Khaled</footer>
+
+<script>
+(function(){
+var m=document.getElementById('menu'),o=document.getElementById('open'),c=document.getElementById('close');
+function set(v){m.classList.toggle('open',v);document.body.classList.toggle('lock',v);o.setAttribute('aria-expanded',v);(v?c:o).focus()}
+o.addEventListener('click',function(){set(true)});
+c.addEventListener('click',function(){set(false)});
+m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){m.classList.remove('open');document.body.classList.remove('lock');o.setAttribute('aria-expanded',false)})});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&m.classList.contains('open'))set(false)});
+})();
+</script>
+</body>
+</html>
